@@ -82,7 +82,6 @@ function navigateToSection(sectionId) {
 function updatePageTitle(sectionId) {
   const titles = {
     home: "Beranda - X TKJ 1",
-    vision: "Visi & Misi - X TKJ 1",
     students: "Data Siswa - X TKJ 1",
     leadership: "Kepengurusan - X TKJ 1",
     activities: "Aktivitas - X TKJ 1",
@@ -91,12 +90,50 @@ function updatePageTitle(sectionId) {
   document.title = titles[sectionId] || "Portofolio Kelas X TKJ 1";
 }
 
-// Initialize data (placeholder for future data loading)
+// Initialize data with sample student data
 function initializeData() {
-  // Since we should not use mock data, we'll keep these empty
-  // Real data should be loaded from actual sources
-  studentsData = []; // This should be populated from actual data source
-  activitiesData = []; // This should be populated from actual data source
+  // Sample data for 37 students (can be replaced with real data)
+  studentsData = [
+    { name: "Abdul Aziz Rendy Pratama", gender: "L", phone: "081234567001" },
+    { name: "Achmad Revi Febryan Triputra", gender: "L", phone: "081234567002" },
+    { name: "Ahmad Hafidz Salman Alfarisi", gender: "L", phone: "081234567003" },
+    { name: "Ahmat Teguh Pambudi", gender: "L", phone: "081234567004" },
+    { name: "Akhmat Tukhin", gender: "L", phone: "081234567005" },
+    { name: "Al-Abidatus Sholicha", gender: "p", phone: "081234567006" },
+    { name: "Amalia Maqsudah", gender: "P", phone: "081234567007" },
+    { name: "Andra Ibrahim Ma'ruf", gender: "L", phone: "081234567008" },
+    { name: "Arindra Pradita Pratama Putra", gender: "L", phone: "081234567009" },
+    { name: "Astri Lestari", gender: "L", phone: "081234567010" },
+    { name: "Azril Cahya Syahputra", gender: "L", phone: "081234567011" },
+    { name: "Devin Julio Pratama", gender: "L", phone: "081234567012" },
+    { name: "Diga Nikaya Akbar", gender: "L", phone: "081234567013" },
+    { name: "Evan Favian Akmal", gender: "L", phone: "081234567014" },
+    { name: "Fathan Ghani", gender: "L", phone: "081234567015" },
+    { name: "Galih Juliansyah", gender: "L", phone: "081234567016" },
+    { name: "Hamdani Navis Choiri", gender: "L", phone: "081234567017" },
+    { name: "Reza Pahlevi", gender: "L", phone: "081234567018" },
+    { name: "Sari Wulandari", gender: "P", phone: "081234567019" },
+    { name: "Taufik Hidayat", gender: "L", phone: "081234567020" },
+    { name: "Ulfa Azizah", gender: "P", phone: "081234567021" },
+    { name: "Vino Bastian", gender: "L", phone: "081234567022" },
+    { name: "Winda Kusuma", gender: "P", phone: "081234567023" },
+    { name: "Xavier Anggara", gender: "L", phone: "081234567024" },
+    { name: "Yuni Shara", gender: "P", phone: "081234567025" },
+    { name: "Zaki Mubarak", gender: "L", phone: "081234567026" },
+    { name: "Arief Budiman", gender: "L", phone: "081234567027" },
+    { name: "Bella Safira", gender: "P", phone: "081234567028" },
+    { name: "Candra Kirana", gender: "P", phone: "081234567029" },
+    { name: "Dani Pratama", gender: "L", phone: "081234567030" },
+    { name: "Eka Sari", gender: "P", phone: "081234567031" },
+    { name: "Fandi Ahmad", gender: "L", phone: "081234567032" },
+    { name: "Gina Puspita", gender: "P", phone: "081234567033" },
+    { name: "Hafiz Ramadhan", gender: "L", phone: "081234567034" },
+    { name: "Intan Permata", gender: "P", phone: "081234567035" },
+    { name: "Jihan Aulia", gender: "P", phone: "081234567036" },
+    { name: "Kevin Andika", gender: "L", phone: "081234567037" },
+  ];
+
+  activitiesData = []; // This will be populated from HTML content
 
   // Update UI to show current state
   updateStudentsDisplay();
@@ -120,39 +157,58 @@ function loadSectionData(sectionId) {
 
 // Update students display
 function updateStudentsDisplay() {
-  const studentsGrid = document.getElementById("students-grid");
+  const studentsTbody = document.getElementById("students-tbody");
   const totalStudentsElement = document.getElementById("total-students");
+  const maleStudentsElement = document.getElementById("male-students");
+  const femaleStudentsElement = document.getElementById("female-students");
 
   if (studentsData.length === 0) {
-    // Show no data message (already in HTML)
+    studentsTbody.innerHTML =
+      '<tr><td colspan="4" style="text-align: center; padding: 2rem; color: #666;">Tidak ada data siswa</td></tr>';
     totalStudentsElement.textContent = "0";
+    maleStudentsElement.textContent = "0";
+    femaleStudentsElement.textContent = "0";
     return;
   }
 
   // Clear existing content
-  studentsGrid.innerHTML = "";
+  studentsTbody.innerHTML = "";
 
-  // Update total count
+  // Calculate statistics
+  const maleCount = studentsData.filter(
+    (student) => student.gender === "L"
+  ).length;
+  const femaleCount = studentsData.filter(
+    (student) => student.gender === "P"
+  ).length;
+
+  // Update statistics
   totalStudentsElement.textContent = studentsData.length;
+  maleStudentsElement.textContent = maleCount;
+  femaleStudentsElement.textContent = femaleCount;
 
-  // Generate student cards
+  // Generate student rows
   studentsData.forEach((student, index) => {
-    const studentCard = createStudentCard(student, index + 1);
-    studentsGrid.appendChild(studentCard);
+    const studentRow = createStudentRow(student, index + 1);
+    studentsTbody.appendChild(studentRow);
   });
 }
 
-// Create individual student card
-function createStudentCard(student, number) {
-  const card = document.createElement("div");
-  card.className = "student-card";
+// Create individual student row
+function createStudentRow(student, number) {
+  const row = document.createElement("tr");
 
-  card.innerHTML = `
-        <div class="student-number">${number}</div>
-        <div class="student-name">${student.name || "[Nama Siswa]"}</div>
+  const genderClass = student.gender === "L" ? "gender-male" : "gender-female";
+  const genderText = student.gender === "L" ? "Laki-laki" : "Perempuan";
+
+  row.innerHTML = `
+        <td><span class="absen-number">${number}</span></td>
+        <td class="student-name">${student.name}</td>
+        <td><span class="student-gender ${genderClass}">${genderText}</span></td>
+        <td class="student-phone">${student.phone}</td>
     `;
 
-  return card;
+  return row;
 }
 
 // Update activities display
