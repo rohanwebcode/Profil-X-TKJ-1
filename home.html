@@ -1,459 +1,993 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio Kelas X TKJ 1</title>
-    <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <!--Feather icons-->
-    <script src="https://unpkg.com/feather-icons"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h2>X TKJ 1</h2>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link" data-section="home">Beranda</a>
-                <a href="#students" class="nav-link" data-section="students">Data Siswa</a>
-                <a href="#leadership" class="nav-link" data-section="leadership">Kepengurusan</a>
-                <a href="#activities" class="nav-link" data-section="activities">Aktivitas</a>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <h2>X TKJ 1</h2>
         </div>
+        <div class="nav-menu" id="nav-menu">
+          <a href="#home" class="nav-link" data-section="home">Beranda</a>
+          <a href="#schedule" class="nav-link" data-section="schedule"
+            >Jadwal</a
+          >
+          <a href="#students" class="nav-link" data-section="students"
+            >Data Siswa</a
+          >
+          <a href="#leadership" class="nav-link" data-section="leadership"
+            >Kepengurusan</a
+          >
+          <a href="#activities" class="nav-link" data-section="activities"
+            >Aktivitas</a
+          >
+        </div>
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
     </nav>
 
     <!-- Main Content -->
     <main class="main-content">
-        <!-- Home Section -->
-        <section id="home" class="section active">
-            <!-- Hero Area -->
-            <div class="hero-area">
-                <div class="hero-background">
-                    <div class="geometric-shapes">
-                        <div class="shape shape-1"></div>
-                        <div class="shape shape-2"></div>
-                        <div class="shape shape-3"></div>
-                        <div class="shape shape-4"></div>
-                    </div>
+      <!-- Home Section -->
+      <section id="home" class="section active">
+        <!-- Hero Area -->
+        <div class="hero-area">
+          <div class="hero-background">
+            <div class="geometric-shapes">
+              <div class="shape shape-1"></div>
+              <div class="shape shape-2"></div>
+              <div class="shape shape-3"></div>
+              <div class="shape shape-4"></div>
+            </div>
+          </div>
+          <div class="hero-container">
+            <div class="hero-content">
+              <div class="hero-badge">
+                <i class="fas fa-graduation-cap"></i>
+                <span>SMK Teknik Komputer</span>
+              </div>
+              <h1 class="hero-title">
+                Kelas <span class="highlight">X TKJ 1</span>
+              </h1>
+              <p class="hero-subtitle">Teknik Komputer dan Jaringan</p>
+              <p class="hero-description">
+                Selamat datang di website portofolio kelas X TKJ 1. Kami adalah
+                kelas yang berfokus pada bidang teknologi komputer dan jaringan,
+                dengan semangat belajar yang tinggi dan kolaborasi yang solid
+                untuk masa depan digital.
+              </p>
+              <div class="hero-stats">
+                <div class="stat-item">
+                  <span class="stat-number">37</span>
+                  <span class="stat-label">Siswa</span>
                 </div>
-                <div class="hero-container">
-                    <div class="hero-content">
-                        <div class="hero-badge">
-                            <i class="fas fa-graduation-cap"></i>
-                            <span>SMK Teknik Komputer</span>
-                        </div>
-                        <h1 class="hero-title">
-                            Kelas <span class="highlight">X TKJ 1</span>
-                        </h1>
-                        <p class="hero-subtitle">Teknik Komputer dan Jaringan</p>
-                        <p class="hero-description">
-                            Selamat datang di website portofolio kelas X TKJ 1. 
-                            Kami adalah kelas yang berfokus pada bidang teknologi komputer dan jaringan, 
-                            dengan semangat belajar yang tinggi dan kolaborasi yang solid untuk masa depan digital.
-                        </p>
-                        <div class="hero-stats">
-                            <div class="stat-item">
-                                <span class="stat-number">37</span>
-                                <span class="stat-label">Siswa</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">90%</span>
-                                <span class="stat-label">Dedikasi</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">1#</span>
-                                <span class="stat-label">Rank</span>
-                            </div>
-                        </div>
-                        <div class="hero-buttons">
-                            <button class="cta-button primary" onclick="navigateToSection('students')">
-                                <i class="fas fa-users"></i>
-                                Lihat Data Siswa
-                            </button>
-                            <button class="cta-button secondary" onclick="navigateToSection('activities')">
-                                <i class="fas fa-camera"></i>
-                                Lihat Aktivitas
-                            </button>
-                        </div>
-                    </div>
-                    <div class="hero-visual">
-                        <div class="hero-image-main">
-                            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-                                 alt="Kelas X TKJ 1 - Teknologi Komputer" class="hero-main-img">
-                            <div class="image-decoration">
-                                <div class="decoration-circle"></div>
-                                <div class="decoration-dots"></div>
-                            </div>
-                        </div>
-                        <div class="floating-elements">
-                            <div class="floating-card tech-card">
-                                <i class="fas fa-laptop-code"></i>
-                                <span>Teknologi</span>
-                            </div>
-                            <div class="floating-card network-card">
-                                <i class="fas fa-network-wired"></i>
-                                <span>Jaringan</span>
-                            </div>
-                            <div class="floating-card code-card">
-                                <i class="fas fa-code"></i>
-                                <span>Programming</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="stat-item">
+                  <span class="stat-number">90%</span>
+                  <span class="stat-label">Dedikasi</span>
                 </div>
+                <div class="stat-item">
+                  <span class="stat-number">1#</span>
+                  <span class="stat-label">Rank</span>
+                </div>
+              </div>
+              <div class="hero-buttons">
+                <button
+                  class="cta-button primary"
+                  onclick="navigateToSection('students')"
+                >
+                  <i class="fas fa-users"></i>
+                  Lihat Data Siswa
+                </button>
+                <button
+                  class="cta-button secondary"
+                  onclick="navigateToSection('activities')"
+                >
+                  <i class="fas fa-camera"></i>
+                  Lihat Aktivitas
+                </button>
+              </div>
+            </div>
+            <div class="hero-visual">
+              <div class="hero-slider" id="hero-slider">
+                <div class="slider-container">
+                  <div class="slide active">
+                    <img
+                      src="img/praktikum-crimping.jpg"
+                      alt="Teknologi Komputer - Kelas X TKJ 1"
+                      class="slider-img"
+                    />
+                    <div class="slide-content">
+                      <h3>Teknologi Komputer</h3>
+                      <p>Mempelajari dasar-dasar teknologi komputer modern</p>
+                    </div>
+                  </div>
+                  <div class="slide">
+                    <img
+                      src="img/topologi-jaringan.png"
+                      alt="Jaringan Komputer - Kelas X TKJ 1"
+                      class="slider-img"
+                    />
+                    <div class="slide-content">
+                      <h3>Jaringan Komputer</h3>
+                      <p>Memahami konsep dan implementasi jaringan</p>
+                    </div>
+                  </div>
+                  <div class="slide">
+                    <img
+                      src="img/foto-xtkj2-walas.jpg"
+                      alt="fotobar hari guru"
+                      class="slider-img"
+                    />
+                    <div class="slide-content">
+                      <h3>Programming</h3>
+                      <p>Foto bersama memperingati hari guru nasional 2025</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-navigation">
+                  <button class="slider-btn prev" id="slider-prev">
+                    <i class="fas fa-chevron-left"></i>
+                  </button>
+                  <button class="slider-btn next" id="slider-next">
+                    <i class="fas fa-chevron-right"></i>
+                  </button>
+                </div>
+                <div class="slider-dots" id="slider-dots">
+                  <span class="dot active" data-slide="0"></span>
+                  <span class="dot" data-slide="1"></span>
+                  <span class="dot" data-slide="2"></span>
+                </div>
+                <div class="image-decoration">
+                  <div class="decoration-circle"></div>
+                  <div class="decoration-dots"></div>
+                </div>
+              </div>
+              <div class="floating-elements">
+                <div class="floating-card tech-card">
+                  <i class="fas fa-laptop-code"></i>
+                  <span>Teknologi</span>
+                </div>
+                <div class="floating-card network-card">
+                  <i class="fas fa-network-wired"></i>
+                  <span>Jaringan</span>
+                </div>
+                <div class="floating-card code-card">
+                  <i class="fas fa-code"></i>
+                  <span>Programming</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vision Mission Integrated Section -->
+        <div class="vision-mission-section">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-title">Visi & Misi Kelas</h2>
+              <p class="section-subtitle">Landasan dan tujuan kelas X TKJ 1</p>
+            </div>
+            <div class="vision-mission-grid">
+              <div class="vision-card">
+                <div class="card-icon">
+                  <i class="fas fa-eye"></i>
+                </div>
+                <h3>Visi</h3>
+                <p>
+                  Menjadi kelas yang unggul dalam bidang Teknik Komputer dan
+                  Jaringan, menghasilkan siswa-siswi yang kompeten, berkarakter,
+                  dan siap menghadapi tantangan teknologi di era digital.
+                </p>
+              </div>
+              <div class="mission-card">
+                <div class="card-icon">
+                  <i class="fas fa-bullseye"></i>
+                </div>
+                <h3>Misi</h3>
+                <ul class="mission-list">
+                  <li>
+                    Menyelenggarakan pembelajaran yang berkualitas dan inovatif
+                  </li>
+                  <li>
+                    Mengembangkan kompetensi siswa di bidang teknologi komputer
+                    dan jaringan
+                  </li>
+                  <li>Membangun karakter yang kuat dan etika profesional</li>
+                  <li>
+                    Menciptakan lingkungan belajar yang kondusif dan kolaboratif
+                  </li>
+                  <li>
+                    Mempersiapkan siswa untuk melanjutkan pendidikan atau
+                    memasuki dunia kerja
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Schedule Section -->
+      <section id="schedule" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Jadwal Pelajaran</h2>
+            <p class="section-subtitle">
+              Jadwal mata pelajaran kelas X TKJ 1 - Senin sampai Jumat
+            </p>
+          </div>
+          <div class="schedule-grid">
+            <!-- Monday -->
+            <div class="schedule-card">
+              <div class="schedule-header monday">
+                <div class="day-info">
+                  <h3>Senin</h3>
+                  <p class="room-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Ruang B1
+                  </p>
+                </div>
+                <div class="day-icon">
+                  <i class="fas fa-calendar-day"></i>
+                </div>
+              </div>
+              <div class="schedule-content">
+                <div class="time-info">
+                  <i class="fas fa-clock"></i>
+                  <span>07:00 - 15:25</span>
+                </div>
+                <div class="subjects-list">
+                  <div class="subject-item">
+                    <span class="time">07:00 - 08:30</span>
+                    <span class="subject">Matematika</span>
+                  </div>
+                  <div class="subject-item">
+                    <span class="time">08:30 - 10:00</span>
+                    <span class="subject">Bahasa Indonesia</span>
+                  </div>
+                  <div class="subject-item break">
+                    <span class="time">10:00 - 10:15</span>
+                    <span class="subject">Istirahat</span>
+                  </div>
+                  <div class="subject-item">
+                    <span class="time">10:15 - 11:45</span>
+                    <span class="subject">Dasar Teknik Digital</span>
+                  </div>
+                  <div class="subject-item">
+                    <span class="time">11:45 - 13:15</span>
+                    <span class="subject">Sistem Komputer</span>
+                  </div>
+                  <div class="subject-item break">
+                    <span class="time">13:15 - 14:00</span>
+                    <span class="subject">Istirahat</span>
+                  </div>
+                  <div class="subject-item">
+                    <span class="time">14:00 - 15:25</span>
+                    <span class="subject">Pemrograman Dasar</span>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <!-- Vision Mission Integrated Section -->
-            <div class="vision-mission-section">
-                <div class="container">
-                    <div class="section-header">
-                        <h2 class="section-title">Visi & Misi Kelas</h2>
-                        <p class="section-subtitle">Landasan dan tujuan kelas X TKJ 1</p>
-                    </div>
-                    <div class="vision-mission-grid">
-                        <div class="vision-card">
-                            <div class="card-icon">
-                                <i class="fas fa-eye"></i>
-                            </div>
-                            <h3>Visi</h3>
-                            <p>
-                                Menjadi kelas yang unggul dalam bidang Teknik Komputer dan Jaringan, 
-                                menghasilkan siswa-siswi yang kompeten, berkarakter, dan siap menghadapi 
-                                tantangan teknologi di era digital.
-                            </p>
-                        </div>
-                        <div class="mission-card">
-                            <div class="card-icon">
-                                <i class="fas fa-bullseye"></i>
-                            </div>
-                            <h3>Misi</h3>
-                            <ul class="mission-list">
-                                <li>Menyelenggarakan pembelajaran yang berkualitas dan inovatif</li>
-                                <li>Mengembangkan kompetensi siswa di bidang teknologi komputer dan jaringan</li>
-                                <li>Membangun karakter yang kuat dan etika profesional</li>
-                                <li>Menciptakan lingkungan belajar yang kondusif dan kolaboratif</li>
-                                <li>Mempersiapkan siswa untuk melanjutkan pendidikan atau memasuki dunia kerja</li>
-                            </ul>
-                        </div>
-                    </div>
+            <!-- Tuesday -->
+            <div class="schedule-card">
+              <div class="schedule-header tuesday">
+                <div class="day-info">
+                  <h3>Selasa</h3>
+                  <p class="room-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Ruang B1
+                  </p>
                 </div>
+                <div class="day-icon">
+                  <i class="fas fa-calendar-day"></i>
+                </div>
+              </div>
+              <div class="schedule-content">
+                <div class="time-info">
+                  <i class="fas fa-clock"></i>
+                  <span>07:00 - 15:25</span>
+                </div>
+                <div class="subjects-list">
+                  <div class="subject-item">
+                    <span class="time">07:00 - 08:30</span>
+                    <span class="subject">Bahasa Inggris</span>
+                  </div>
+                  <div class="subject-item">
+                    <span class="time">08:30 - 10:00</span>
+                    <span class="subject">Fisika</span>
+                  </div>
+                  <div class="subject-item break">
+                    <span class="time">10:00 - 10:15</span>
+                    <span class="subject">Istirahat</span>
+                  </div>
+                  <div class="subject-item">
+                    <span class="time">10:15 - 11:45</span>
+                    <span class="subject">Komputer dan Jaringan Dasar</span>
+                  </div>
+                  <div class="subject-item">
+                    <span class="time">11:45 - 13:15</span>
+                    <span class="subject">Simulasi Digital</span>
+                  </div>
+                  <div class="subject-item break">
+                    <span class="time">13:15 - 14:00</span>
+                    <span class="subject">Istirahat</span>
+                  </div>
+                  <div class="subject-item">
+                    <span class="time">14:00 - 15:25</span>
+                    <span class="subject">PKN</span>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
 
-
-
-        <!-- Students Section -->
-        <section id="students" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Data Siswa</h2>
-                    <p class="section-subtitle">Daftar siswa-siswi kelas X TKJ 1</p>
+            <!-- Wednesday -->
+            <div class="schedule-card">
+              <div class="schedule-header wednesday">
+                <div class="day-info">
+                  <h3>Rabu</h3>
+                  <p class="room-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Ruang B2
+                  </p>
                 </div>
-                <div class="students-stats">
-                    <div class="stat-card">
-                        <i class="fas fa-users"></i>
-                        <h3 id="total-students">0</h3>
-                        <p>Total Siswa</p>
-                    </div>
-                    <div class="stat-card">
-                        <i class="fas fa-male"></i>
-                        <h3 id="male-students">0</h3>
-                        <p>Siswa Laki-laki</p>
-                    </div>
-                    <div class="stat-card">
-                        <i class="fas fa-female"></i>
-                        <h3 id="female-students">0</h3>
-                        <p>Siswa Perempuan</p>
-                    </div>
+                <div class="day-icon">
+                  <i class="fas fa-calendar-day"></i>
                 </div>
-                <div class="students-table-container">
-                    <table class="students-table" id="students-table">
-                        <thead>
-                            <tr>
-                                <th>No. Absen</th>
-                                <th>Nama Lengkap</th>
-                                <th>Jenis Kelamin</th>
-                                <th>No. Telepon</th>
-                            </tr>
-                        </thead>
-                        <tbody id="students-tbody">
-                            <!-- Student data will be populated by JavaScript -->
-                        </tbody>
-                    </table>
+              </div>
+              <div class="schedule-content">
+                <div class="time-info">
+                  <i class="fas fa-clock"></i>
+                  <span>07:00 - 15:25</span>
                 </div>
+                <div class="subjects-list">
+                  <div class="subject-item">
+                    <span class="time">07:00 - 08:30</span>
+                    <span class="subject">Sejarah Indonesia</span>
+                  </div>
+                  <div class="subject-item">
+                    <span class="time">08:30 - 10:00</span>
+                    <span class="subject">Seni Budaya</span>
+                  </div>
+                  <div class="subject-item break">
+                    <span class="time">10:00 - 10:15</span>
+                    <span class="subject">Istirahat</span>
+                  </div>
+                  <div class="subject-item">
+                    <span class="time">10:15 - 11:45</span>
+                    <span class="subject">Administrasi Sistem Jaringan</span>
+                  </div>
+                  <div class="subject-item">
+                    <span class="time">11:45 - 13:15</span>
+                    <span class="subject">Teknologi Layanan Jaringan</span>
+                  </div>
+                  <div class="subject-item break">
+                    <span class="time">13:15 - 14:00</span>
+                    <span class="subject">Istirahat</span>
+                  </div>
+                  <div class="subject-item">
+                    <span class="time">14:00 - 15:25</span>
+                    <span class="subject">Agama</span>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
 
-        <!-- Leadership Section -->
-        <section id="leadership" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Struktur Kepengurusan</h2>
-                    <p class="section-subtitle">Organisasi kepemimpinan kelas X TKJ 1</p>
+            <!-- Thursday -->
+            <div class="schedule-card">
+              <div class="schedule-header thursday">
+                <div class="day-info">
+                  <h3>Kamis</h3>
+                  <p class="room-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Ruang B2
+                  </p>
                 </div>
-                <div class="leadership-hierarchy">
-                    <div class="leadership-level">
-                        <div class="leadership-card wali-kelas">
-                            <div class="leader-avatar">
-                                <i class="fas fa-chalkboard-teacher"></i>
-                            </div>
-                            <h3>Wali Kelas</h3>
-                            <p class="leader-name">Nike AR S.Pd., Gr.</p>
-                            <p class="leader-role">Pembimbing dan Koordinator Kelas</p>
-                        </div>
-                    </div>
-                    
-                    <div class="leadership-level">
-                        <div class="leadership-card ketua">
-                            <div class="leader-avatar">
-                                <i class="fas fa-crown"></i>
-                            </div>
-                            <h3>Ketua Kelas</h3>
-                            <p class="leader-name">Rohan Isagani</p>
-                            <p class="leader-role">Pemimpin dan Koordinator Siswa</p>
-                        </div>
-                        
-                        <div class="leadership-card wakil-ketua">
-                            <div class="leader-avatar">
-                                <i class="fas fa-user-tie"></i>
-                            </div>
-                            <h3>Wakil Ketua</h3>
-                            <p class="leader-name">Rohan Isagani</p>
-                            <p class="leader-role">Pendamping Ketua Kelas</p>
-                        </div>
-                    </div>
-                    
-                    <div class="leadership-level">
-                        <div class="leadership-card bendahara">
-                            <div class="leader-avatar">
-                                <i class="fas fa-coins"></i>
-                            </div>
-                            <h3>Bendahara</h3>
-                            <p class="leader-name">Nailatul Fauziyah</p>
-                            <p class="leader-role">Pengelola Keuangan Kelas</p>
-                        </div>
-                        
-                        <div class="leadership-card wakil-bendahara">
-                            <div class="leader-avatar">
-                                <i class="fas fa-wallet"></i>
-                            </div>
-                            <h3>Wakil Bendahara</h3>
-                            <p class="leader-name">Diga Nikaya Akbar</p>
-                            <p class="leader-role">Pendamping Bendahara</p>
-                        </div>
-                        
-                        <div class="leadership-card sekretaris">
-                            <div class="leader-avatar">
-                                <i class="fas fa-file-alt"></i>
-                            </div>
-                            <h3>Sekretaris</h3>
-                            <p class="leader-name">Al Abidatus S</p>
-                            <p class="leader-role">Pengelola Administrasi</p>
-                        </div>
-                        
-                        <div class="leadership-card wakil-sekretaris">
-                            <div class="leader-avatar">
-                                <i class="fas fa-clipboard"></i>
-                            </div>
-                            <h3>Wakil Sekretaris</h3>
-                            <p class="leader-name">Astri Lestari</p>
-                            <p class="leader-role">Pendamping Sekretaris</p>
-                        </div>
-                    </div>
+                <div class="day-icon">
+                  <i class="fas fa-calendar-day"></i>
                 </div>
+              </div>
+              <div class="schedule-content">
+                <div class="time-info">
+                  <i class="fas fa-clock"></i>
+                  <span>07:00 - 15:25</span>
+                </div>
+                <div class="subjects-list">
+                  <div class="subject-item">
+                    <span class="time">07:00 - 08:30</span>
+                    <span class="subject">Penjaskes</span>
+                  </div>
+                  <div class="subject-item">
+                    <span class="time">08:30 - 10:00</span>
+                    <span class="subject">Prakarya</span>
+                  </div>
+                  <div class="subject-item break">
+                    <span class="time">10:00 - 10:15</span>
+                    <span class="subject">Istirahat</span>
+                  </div>
+                  <div class="subject-item">
+                    <span class="time">10:15 - 11:45</span>
+                    <span class="subject">Komunikasi Data</span>
+                  </div>
+                  <div class="subject-item">
+                    <span class="time">11:45 - 13:15</span>
+                    <span class="subject">Keamanan Jaringan</span>
+                  </div>
+                  <div class="subject-item break">
+                    <span class="time">13:15 - 14:00</span>
+                    <span class="subject">Istirahat</span>
+                  </div>
+                  <div class="subject-item">
+                    <span class="time">14:00 - 15:25</span>
+                    <span class="subject">Troubleshooting Jaringan</span>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
 
-        <!-- Activities Section -->
-        <section id="activities" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Aktivitas Kelas</h2>
-                    <p class="section-subtitle">Dokumentasi kegiatan dan pencapaian kelas</p>
+            <!-- Friday -->
+            <div class="schedule-card">
+              <div class="schedule-header friday">
+                <div class="day-info">
+                  <h3>Jumat</h3>
+                  <p class="room-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Lab Komputer
+                  </p>
                 </div>
-                <div class="activities-grid" id="activities-grid">
-                    <!-- Sample Activity -->
-                    <div class="activity-card featured">
-                        <div class="activity-image">
-                            <img src="https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
-                                 alt="Seminar Pemrograman" class="activity-img">
-                            <div class="activity-badge">
-                                <i class="fas fa-star"></i>
-                                <span>Unggulan</span>
-                            </div>
-                        </div>
-                        <div class="activity-content">
-                            <div class="activity-meta">
-                                <span class="activity-category">
-                                    <i class="fas fa-code"></i>
-                                    Pembelajaran
-                                </span>
-                                <span class="activity-date">
-                                    <i class="fas fa-calendar"></i>
-                                    15 Juni 2025
-                                </span>
-                            </div>
-                            <h3 class="activity-title">Seminar Pemrograman Web Modern</h3>
-                            <p class="activity-description">
-                                Kegiatan seminar tentang teknologi pemrograman web terkini yang dihadiri oleh 
-                                seluruh siswa kelas X TKJ 1. Materi meliputi HTML5, CSS3, JavaScript ES6+, 
-                                dan framework modern seperti React dan Vue.js.
-                            </p>
-                            <div class="activity-details">
-                                <div class="detail-item">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>Aula SMK</span>
-                                </div>
-                                <div class="detail-item">
-                                    <i class="fas fa-clock"></i>
-                                    <span>08:00 - 15:00 WIB</span>
-                                </div>
-                                <div class="detail-item">
-                                    <i class="fas fa-users"></i>
-                                    <span>37 Peserta</span>
-                                </div>
-                            </div>
-                            <div class="activity-tags">
-                                <span class="tag">HTML</span>
-                                <span class="tag">CSS</span>
-                                <span class="tag">JavaScript</span>
-                                <span class="tag">React</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Sample Activity 2 -->
-                    <div class="activity-card">
-                        <div class="activity-image">
-                            <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
-                                 alt="Belajar Matematika Dasar" class="activity-img">
-                        </div>
-                        <div class="activity-content">
-                            <div class="activity-meta">
-                                <span class="activity-category">
-                                    <i class="fas fa-calculator"></i>
-                                    Pembelajaran
-                                </span>
-                                <span class="activity-date">
-                                    <i class="fas fa-calendar"></i>
-                                    10 Juni 2025
-                                </span>
-                            </div>
-                            <h3 class="activity-title">Belajar Matematika Dasar</h3>
-                            <p class="activity-description">
-                                Kegiatan pembelajaran matematika dasar yang mencakup materi aljabar, 
-                                geometri, dan statistik. Sesi ini bertujuan untuk memperkuat pemahaman 
-                                dasar matematika sebagai fondasi untuk mata pelajaran teknis lainnya.
-                            </p>
-                            <div class="activity-details">
-                                <div class="detail-item">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>Ruang Kelas X TKJ 1</span>
-                                </div>
-                                <div class="detail-item">
-                                    <i class="fas fa-clock"></i>
-                                    <span>07:30 - 09:00 WIB</span>
-                                </div>
-                                <div class="detail-item">
-                                    <i class="fas fa-users"></i>
-                                    <span>37 Peserta</span>
-                                </div>
-                            </div>
-                            <div class="activity-tags">
-                                <span class="tag">Aljabar</span>
-                                <span class="tag">Geometri</span>
-                                <span class="tag">Statistik</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Template untuk aktivitas baru -->
-                    <div class="activity-card template">
-                        <div class="activity-image placeholder">
-                            <i class="fas fa-image"></i>
-                            <span>Foto akan ditambahkan</span>
-                        </div>
-                        <div class="activity-content">
-                            <div class="activity-meta">
-                                <span class="activity-category">
-                                    <i class="fas fa-book"></i>
-                                    [Kategori]
-                                </span>
-                                <span class="activity-date">
-                                    <i class="fas fa-calendar"></i>
-                                    [Tanggal]
-                                </span>
-                            </div>
-                            <h3 class="activity-title">[Judul Aktivitas]</h3>
-                            <p class="activity-description">
-                                [Deskripsi aktivitas kelas akan ditambahkan di sini. 
-                                Anda dapat mengganti konten ini dengan kegiatan nyata kelas.]
-                            </p>
-                            <div class="activity-details">
-                                <div class="detail-item">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>[Lokasi]</span>
-                                </div>
-                                <div class="detail-item">
-                                    <i class="fas fa-clock"></i>
-                                    <span>[Waktu]</span>
-                                </div>
-                                <div class="detail-item">
-                                    <i class="fas fa-users"></i>
-                                    <span>[Jumlah Peserta]</span>
-                                </div>
-                            </div>
-                            <div class="activity-tags">
-                                <span class="tag">[Tag 1]</span>
-                                <span class="tag">[Tag 2]</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="day-icon">
+                  <i class="fas fa-calendar-day"></i>
                 </div>
+              </div>
+              <div class="schedule-content">
+                <div class="time-info">
+                  <i class="fas fa-clock"></i>
+                  <span>07:00 - 15:25</span>
+                </div>
+                <div class="subjects-list">
+                  <div class="subject-item">
+                    <span class="time">07:00 - 08:30</span>
+                    <span class="subject">Praktikum Jaringan</span>
+                  </div>
+                  <div class="subject-item">
+                    <span class="time">08:30 - 10:00</span>
+                    <span class="subject">Praktikum Programming</span>
+                  </div>
+                  <div class="subject-item break">
+                    <span class="time">10:00 - 10:15</span>
+                    <span class="subject">Istirahat</span>
+                  </div>
+                  <div class="subject-item">
+                    <span class="time">10:15 - 11:45</span>
+                    <span class="subject">Project Based Learning</span>
+                  </div>
+                  <div class="subject-item special">
+                    <span class="time">11:45 - 13:15</span>
+                    <span class="subject">Sholat Jumat</span>
+                  </div>
+                  <div class="subject-item break">
+                    <span class="time">13:15 - 14:00</span>
+                    <span class="subject">Istirahat</span>
+                  </div>
+                  <div class="subject-item">
+                    <span class="time">14:00 - 15:25</span>
+                    <span class="subject">Evaluasi Mingguan</span>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- Students Section -->
+      <section id="students" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Data Siswa</h2>
+            <p class="section-subtitle">Daftar siswa-siswi kelas X TKJ 1</p>
+          </div>
+          <div class="students-stats">
+            <div class="stat-card">
+              <i class="fas fa-users"></i>
+              <h3 id="total-students">0</h3>
+              <p>Total Siswa</p>
+            </div>
+            <div class="stat-card">
+              <i class="fas fa-male"></i>
+              <h3 id="male-students">0</h3>
+              <p>Siswa Laki-laki</p>
+            </div>
+            <div class="stat-card">
+              <i class="fas fa-female"></i>
+              <h3 id="female-students">0</h3>
+              <p>Siswa Perempuan</p>
+            </div>
+          </div>
+          <div class="students-table-container">
+            <table class="students-table" id="students-table">
+              <thead>
+                <tr>
+                  <th>No. Absen</th>
+                  <th>Nama Lengkap</th>
+                  <th>Jenis Kelamin</th>
+                  <th>No. Telepon</th>
+                </tr>
+              </thead>
+              <tbody id="students-tbody">
+                <!-- Student data will be populated by JavaScript -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Leadership Section -->
+      <section id="leadership" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Struktur Kepengurusan</h2>
+            <p class="section-subtitle">
+              Organisasi kepemimpinan kelas X TKJ 1
+            </p>
+          </div>
+          <div class="leadership-hierarchy">
+            <div class="leadership-level">
+              <div class="leadership-card wali-kelas">
+                <div class="leader-avatar">
+                  <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <h3>Wali Kelas</h3>
+                <p class="leader-name">Nike Ar S.pd., Gr.</p>
+                <p class="leader-role">Pembimbing dan Koordinator Kelas</p>
+              </div>
+            </div>
+
+            <div class="leadership-level">
+              <div class="leadership-card ketua">
+                <div class="leader-avatar">
+                  <i class="fas fa-crown"></i>
+                </div>
+                <h3>Ketua Kelas</h3>
+                <p class="leader-name">Rohan Isagani</p>
+                <p class="leader-role">Pemimpin dan Koordinator Siswa</p>
+              </div>
+
+              <div class="leadership-card wakil-ketua">
+                <div class="leader-avatar">
+                  <i class="fas fa-user-tie"></i>
+                </div>
+                <h3>Wakil Ketua</h3>
+                <p class="leader-name">Rohan Isagani</p>
+                <p class="leader-role">Pendamping Ketua Kelas</p>
+              </div>
+            </div>
+
+            <div class="leadership-level">
+              <div class="leadership-card bendahara">
+                <div class="leader-avatar">
+                  <i class="fas fa-coins"></i>
+                </div>
+                <h3>Bendahara</h3>
+                <p class="leader-name">Nailatul Fauziyah</p>
+                <p class="leader-role">Pengelola Keuangan Kelas</p>
+              </div>
+
+              <div class="leadership-card wakil-bendahara">
+                <div class="leader-avatar">
+                  <i class="fas fa-wallet"></i>
+                </div>
+                <h3>Wakil Bendahara</h3>
+                <p class="leader-name">Diga Nikaya Akbar</p>
+                <p class="leader-role">Pendamping Bendahara</p>
+              </div>
+
+              <div class="leadership-card sekretaris">
+                <div class="leader-avatar">
+                  <i class="fas fa-file-alt"></i>
+                </div>
+                <h3>Sekretaris</h3>
+                <p class="leader-name">Al-Abidatus S</p>
+                <p class="leader-role">Pengelola Administrasi</p>
+              </div>
+
+              <div class="leadership-card wakil-sekretaris">
+                <div class="leader-avatar">
+                  <i class="fas fa-clipboard"></i>
+                </div>
+                <h3>Wakil Sekretaris</h3>
+                <p class="leader-name">Astri Lestari</p>
+                <p class="leader-role">Pendamping Sekretaris</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Activities Section -->
+      <section id="activities" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Aktivitas Kelas</h2>
+            <p class="section-subtitle">
+              Dokumentasi kegiatan dan pencapaian kelas
+            </p>
+          </div>
+          <div class="activities-grid" id="activities-grid">
+            <!--
+            Untuk card susuunan berada mulai dari yang terbaru. saya dapat menambahkan di bagian baru
+            setelah card yang memiliki badge Unggulan dan class "activity-card featured"
+            -->
+            <!-- Sample Activity -->
+            <div
+              class="activity-card featured"
+              onclick="openActivityModal('activity1')"
+            >
+              <div class="activity-image">
+                <div class="activity-slider">
+                  <div class="activity-slide active">
+                    <img
+                      src="https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                      alt="Seminar Pemrograman"
+                      class="activity-img"
+                    />
+                  </div>
+                  <div class="activity-slide">
+                    <img
+                      src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                      alt="Seminar Pemrograman 2"
+                      class="activity-img"
+                    />
+                  </div>
+                  <div class="activity-slide">
+                    <img
+                      src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                      alt="Seminar Pemrograman 3"
+                      class="activity-img"
+                    />
+                  </div>
+                  <div class="activity-slide">
+                    <img
+                      src="https://images.unsplash.com/photo-1573167243872-43c6433b9d40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                      alt="Seminar Pemrograman 4"
+                      class="activity-img"
+                    />
+                  </div>
+                </div>
+                <div class="activity-nav">
+                  <button
+                    class="activity-nav-btn prev"
+                    onclick="event.stopPropagation(); changeActivitySlide('activity1', -1)"
+                  >
+                    <i class="fas fa-chevron-left"></i>
+                  </button>
+                  <button
+                    class="activity-nav-btn next"
+                    onclick="event.stopPropagation(); changeActivitySlide('activity1', 1)"
+                  >
+                    <i class="fas fa-chevron-right"></i>
+                  </button>
+                </div>
+                <div class="activity-dots">
+                  <span
+                    class="activity-dot active"
+                    onclick="event.stopPropagation(); goToActivitySlide('activity1', 0)"
+                  ></span>
+                  <span
+                    class="activity-dot"
+                    onclick="event.stopPropagation(); goToActivitySlide('activity1', 1)"
+                  ></span>
+                  <span
+                    class="activity-dot"
+                    onclick="event.stopPropagation(); goToActivitySlide('activity1', 2)"
+                  ></span>
+                  <span
+                    class="activity-dot"
+                    onclick="event.stopPropagation(); goToActivitySlide('activity1', 3)"
+                  ></span>
+                </div>
+                <div class="activity-badge">
+                  <i class="fas fa-star"></i>
+                  <span>Unggulan</span>
+                </div>
+              </div>
+              <div class="activity-content">
+                <div class="activity-meta">
+                  <span class="activity-category">
+                    <i class="fas fa-code"></i>
+                    Pembelajaran
+                  </span>
+                  <span class="activity-date">
+                    <i class="fas fa-calendar"></i>
+                    15 Juni 2025
+                  </span>
+                </div>
+                <h3 class="activity-title">Seminar Pemrograman Web Modern</h3>
+                <p class="activity-description">
+                  Kegiatan seminar tentang teknologi pemrograman web terkini
+                  yang dihadiri oleh seluruh siswa kelas X TKJ 1. Materi
+                  meliputi HTML5, CSS3, JavaScript ES6+, dan framework modern
+                  seperti React dan Vue.js.
+                </p>
+                <div class="activity-details">
+                  <div class="detail-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Aula SMK</span>
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-clock"></i>
+                    <span>08:00 - 15:00 WIB</span>
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-users"></i>
+                    <span>37 Peserta</span>
+                  </div>
+                </div>
+                <div class="activity-tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">React</span>
+                </div>
+              </div>
+            </div>
+
+            <!--Tambahkan card baru disini-->
+
+            <!--Activity 2 -->
+            <div class="activity-card" onclick="openActivityModal('activity2')">
+              <div class="activity-image">
+                <div class="activity-slider">
+                  <div class="activity-slide active">
+                    <img
+                      src="https://images.unsplash.com/photo-1509228468518-180dd4864904?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                      alt="Belajar Matematika Dasar"
+                      class="activity-img"
+                    />
+                  </div>
+                  <div class="activity-slide">
+                    <img
+                      src="https://images.unsplash.com/photo-1596495578065-6e0763fa1178?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                      alt="Matematika 2"
+                      class="activity-img"
+                    />
+                  </div>
+                  <div class="activity-slide">
+                    <img
+                      src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                      alt="Matematika 3"
+                      class="activity-img"
+                    />
+                  </div>
+                  <div class="activity-slide">
+                    <img
+                      src="https://images.unsplash.com/photo-1453733190371-0a9bedd82893?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                      alt="Matematika 4"
+                      class="activity-img"
+                    />
+                  </div>
+                </div>
+                <div class="activity-nav">
+                  <button
+                    class="activity-nav-btn prev"
+                    onclick="event.stopPropagation(); changeActivitySlide('activity2', -1)"
+                  >
+                    <i class="fas fa-chevron-left"></i>
+                  </button>
+                  <button
+                    class="activity-nav-btn next"
+                    onclick="event.stopPropagation(); changeActivitySlide('activity2', 1)"
+                  >
+                    <i class="fas fa-chevron-right"></i>
+                  </button>
+                </div>
+                <div class="activity-dots">
+                  <span
+                    class="activity-dot active"
+                    onclick="event.stopPropagation(); goToActivitySlide('activity2', 0)"
+                  ></span>
+                  <span
+                    class="activity-dot"
+                    onclick="event.stopPropagation(); goToActivitySlide('activity2', 1)"
+                  ></span>
+                  <span
+                    class="activity-dot"
+                    onclick="event.stopPropagation(); goToActivitySlide('activity2', 2)"
+                  ></span>
+                  <span
+                    class="activity-dot"
+                    onclick="event.stopPropagation(); goToActivitySlide('activity2', 3)"
+                  ></span>
+                </div>
+              </div>
+              <div class="activity-content">
+                <div class="activity-meta">
+                  <span class="activity-category">
+                    <i class="fas fa-calculator"></i>
+                    Pembelajaran
+                  </span>
+                  <span class="activity-date">
+                    <i class="fas fa-calendar"></i>
+                    10 Juni 2025
+                  </span>
+                </div>
+                <h3 class="activity-title">Belajar Matematika Dasar</h3>
+                <p class="activity-description">
+                  Kegiatan pembelajaran matematika dasar yang mencakup materi
+                  aljabar, geometri, dan statistik. Sesi ini bertujuan untuk
+                  memperkuat pemahaman dasar matematika sebagai fondasi untuk
+                  mata pelajaran teknis lainnya.
+                </p>
+                <div class="activity-details">
+                  <div class="detail-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Ruang Kelas X TKJ 1</span>
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-clock"></i>
+                    <span>07:30 - 09:00 WIB</span>
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-users"></i>
+                    <span>37 Peserta</span>
+                  </div>
+                </div>
+                <div class="activity-tags">
+                  <span class="tag">Aljabar</span>
+                  <span class="tag">Geometri</span>
+                  <span class="tag">Statistik</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Simple Activity 3-->
+
+            <!-- Template untuk aktivitas baru -->
+            <div class="activity-card template">
+              <div class="activity-image placeholder">
+                <i class="fas fa-image"></i>
+                <span>Foto akan ditambahkan</span>
+              </div>
+              <div class="activity-content">
+                <div class="activity-meta">
+                  <span class="activity-category">
+                    <i class="fas fa-book"></i>
+                    [Kategori]
+                  </span>
+                  <span class="activity-date">
+                    <i class="fas fa-calendar"></i>
+                    [Tanggal]
+                  </span>
+                </div>
+                <h3 class="activity-title">[Judul Aktivitas]</h3>
+                <p class="activity-description">
+                  [Deskripsi aktivitas kelas akan ditambahkan di sini. Anda
+                  dapat mengganti konten ini dengan kegiatan nyata kelas.]
+                </p>
+                <div class="activity-details">
+                  <div class="detail-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>[Lokasi]</span>
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-clock"></i>
+                    <span>[Waktu]</span>
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-users"></i>
+                    <span>[Jumlah Peserta]</span>
+                  </div>
+                </div>
+                <div class="activity-tags">
+                  <span class="tag">[Tag 1]</span>
+                  <span class="tag">[Tag 2]</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- Activity Modal -->
+    <div id="activity-modal" class="modal">
+      <div class="modal-backdrop" onclick="closeActivityModal()"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 id="modal-title">Judul Aktivitas</h2>
+          <button class="modal-close" onclick="closeActivityModal()">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-image-container">
+            <div class="modal-slider">
+              <div id="modal-slides" class="modal-slides-container">
+                <!-- Images will be populated here -->
+              </div>
+              <div class="modal-nav">
+                <button class="modal-nav-btn" id="modal-prev">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="modal-nav-btn" id="modal-next">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+              <div id="modal-dots" class="modal-dots">
+                <!-- Dots will be populated here -->
+              </div>
+            </div>
+          </div>
+          <div class="modal-info">
+            <div class="modal-meta">
+              <span id="modal-date" class="modal-date">
+                <i class="fas fa-calendar"></i>
+                Tanggal
+              </span>
+              <span id="modal-location" class="modal-location">
+                <i class="fas fa-map-marker-alt"></i>
+                Lokasi
+              </span>
+            </div>
+            <div id="modal-description" class="modal-description">
+              Deskripsi aktivitas akan ditampilkan di sini...
+            </div>
+            <div id="modal-participants" class="modal-participants">
+              <h4>Peserta:</h4>
+              <div class="participants-list">
+                <!-- Participants will be populated here -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>X TKJ 1</h3>
-                    <p>Kelas Teknik Komputer dan Jaringan yang berfokus pada pengembangan teknologi dan karakter siswa.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Kontak</h4>
-                    <p><i class="fas fa-envelope"></i> @x.technet1</p>
-                    <p><i class="fas fa-phone"></i> +62 815-1588-4665</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Media Sosial</h4>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/x.technet1/" target="_blank"><i class="fab fa-instagram" data-feather="instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>X TKJ 1</h3>
+            <p>
+              Kelas Teknik Komputer dan Jaringan yang berfokus pada pengembangan
+              teknologi dan karakter siswa.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Kontak</h4>
+            <p><i class="fas fa-envelope"></i> info@xtkj1.sch.id</p>
+            <p><i class="fas fa-phone"></i> +62 xxx-xxxx-xxxx</p>
+          </div>
+          <div class="footer-section">
+            <h4>Media Sosial</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Kelas X TKJ 1. All rights reserved.</p>
-            </div>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Kelas X TKJ 1. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-    <script>
-      feather.replace();
-    </script>
-</body>
+  </body>
 </html>
