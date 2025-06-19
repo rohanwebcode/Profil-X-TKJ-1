@@ -127,9 +127,9 @@ function initializeData() {
     { name: "Muhammad Luthfi An-Naufal", gender: "L", phone: "081234567024" },
     { name: "Muhammad Raihan Arrasyiid", gender: "L", phone: "081234567025" },
     { name: "Muhammad Revanda Aditya Nugraha", gender: "L", phone: "081234567026" },
-    { name: "Nailatul Fauziyah", gender: "L", phone: "081234567027" },
+    { name: "Nailatul Fauziyah", gender: "P", phone: "081234567027" },
     { name: "Nayla Salasa Bila Ainur Rohma", gender: "P", phone: "081234567028" },
-    { name: "Ponariyo Astama", gender: "P", phone: "081234567029" },
+    { name: "Ponariyo Astama", gender: "L", phone: "081234567029" },
     { name: "Rangga Aditya Alfareza", gender: "L", phone: "081234567030" },
     { name: "Rifatus Aprilia Utari", gender: "P", phone: "081234567031" },
     { name: "Rohan Isagani", gender: "L", phone: "081515884665" },
@@ -306,25 +306,42 @@ function openActivityModal(activityId) {
   // Di bagian ini berisi content aktivitas modal content atau popup dengan backdrop blur
   const activityData = {
     activity1: {
-      title: "Seminar Pemrograman Web Modern",
-      date: "15 Juni 2025",
-      location: "Aula SMK",
+      title: "Peluncuran Portofolio kelas",
+      date: "19 Juni 2025",
+      location: "[null]",
       description:
-        "Kegiatan seminar tentang teknologi pemrograman web terkini yang dihadiri oleh seluruh siswa kelas X TKJ 1. Materi meliputi HTML5, CSS3, JavaScript ES6+, dan framework modern seperti React dan Vue.js. Seminar ini menghadirkan praktisi industri yang berpengalaman dalam pengembangan web modern dan memberikan wawasan tentang tren teknologi terbaru.",
+        "Pembuatan informasi konten berbasis website sebagai portofolio kelas dengan menjadi bentuk contoh pemanfaatan teknologi komputer dengan baik. Dalam hal ini website portofolio kelas mendasari informasi atau konten di dalamnya yang diunggah sebagai apresiasi dokumentasi aktivitas siswa dan siswi yang sebelumnya dilakukan profesional content.",
       images: [
-        "https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+        "img/aktifitas1/portofolio-digital-qrcode.png",
+        "img/aktifitas1/foto-laptop-pemrograman.jpg",
+        "img/aktifitas1/tampilan-website-portokelas-di-macbook.png",
         "https://images.unsplash.com/photo-1573167243872-43c6433b9d40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
       ],
       participants: [
-        "Seluruh siswa X TKJ 1",
-        "Guru pembimbing",
-        "Praktisi industri",
-        "Tim panitia",
+        "Rohan Isagani"
       ],
     },
     activity2: {
+      //sesuaikan dengan card utama
+      title: "Profil Pelajar Pancasila",
+      date: "26 September 2024",
+      location: "Ruang Kelas X TKJ 1",
+      description:
+        "Melakukan kegiatan belajar dalam rangka P5 dengan mengunjungi tempat-tempat yang mendukung suatu rangkaian pembelajaran yang seru. Beberapa tempat yang dikunjungi antara lain adalah Museum Senobudoyo, BLPT Yogyakarta, Museum Mbah Marijan, Lava Tour Merapi Adventure, dan lainnya. ",
+      images: [
+        "img/Aktivitas-P5/P5-fotbar-rest-area.jpg",
+        "img/Aktivitas-P5/P5-splitcer.jpg",
+        "img/Aktivitas-P5/P5-BLPT.jpg",
+        "img/Aktivitas-P5/P5-fotbar.jpg",
+      ],
+      participants: [
+        "Siswa X TKJ 1",
+        "Guru TKJ",
+        "Angkatan Thn Ajaran 2024",
+        "Guru SMKN 2 Lamongan",
+      ],
+    },
+    activity3: {
       //sesuaikan dengan card utama
       title: "Belajar Matematika Dasar",
       date: "10 Juni 2025",
