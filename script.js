@@ -308,7 +308,7 @@ function openActivityModal(activityId) {
     activity1: {
       title: "Peluncuran Portofolio kelas",
       date: "19 Juni 2025",
-      location: "[null]",
+      location: "Undefined",
       description:
         "Pembuatan informasi konten berbasis website sebagai portofolio kelas dengan menjadi bentuk contoh pemanfaatan teknologi komputer dengan baik. Dalam hal ini website portofolio kelas mendasari informasi atau konten di dalamnya yang diunggah sebagai apresiasi dokumentasi aktivitas siswa dan siswi yang sebelumnya dilakukan profesional content.",
       images: [
@@ -327,12 +327,13 @@ function openActivityModal(activityId) {
       date: "26 September 2024",
       location: "Ruang Kelas X TKJ 1",
       description:
-        "Melakukan kegiatan belajar dalam rangka P5 dengan mengunjungi tempat-tempat yang mendukung suatu rangkaian pembelajaran yang seru. Beberapa tempat yang dikunjungi antara lain adalah Museum Senobudoyo, BLPT Yogyakarta, Museum Mbah Marijan, Lava Tour Merapi Adventure, dan lainnya. ",
+        "Melakukan kegiatan belajar dalam rangka P5 dengan mengunjungi tempat-tempat yang mendukung suatu rangkaian pembelajaran yang seru. Beberapa tempat yang dikunjungi antara lain adalah Museum Senobudoyo, BLPT Yogyakarta, Museum Mbah Marijan, Lava Tour Merapi Adventure, malioboro,  dan lainnya. ",
       images: [
         "img/Aktivitas-P5/P5-fotbar-rest-area.jpg",
         "img/Aktivitas-P5/P5-splitcer.jpg",
         "img/Aktivitas-P5/P5-BLPT.jpg",
         "img/Aktivitas-P5/P5-fotbar.jpg",
+        "img/Aktivitas-P5/P5-xtkj1fotomalioboro.png"
       ],
       participants: [
         "Siswa X TKJ 1",
