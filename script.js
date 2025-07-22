@@ -87,19 +87,19 @@ function navigateToSection(sectionId) {
 // Update page title based on section
 function updatePageTitle(sectionId) {
   const titles = {
-    home: "Beranda - X TKJ 1",
-    schedule: "Jadwal Pelajaran - X TKJ 1",
-    students: "Data Siswa - X TKJ 1",
-    leadership: "Kepengurusan - X TKJ 1",
-    activities: "Aktivitas - X TKJ 1",
+    home: "Beranda - XI TKJ 1",
+    schedule: "Jadwal Pelajaran - XI TKJ 1",
+    students: "Data Siswa - XI TKJ 1",
+    leadership: "Kepengurusan - XI TKJ 1",
+    activities: "Aktivitas - XI TKJ 1",
   };
 
   document.title = titles[sectionId] || "Portofolio Kelas X TKJ 1";
 }
 
-// Initialize data with sample student data
+// Inisialisasi data sample student data absensi
 function initializeData() {
-  // Sample data for 37 students (can be replaced with real data)
+  // Sample data dari 37 siswa XI TKJ 1
   studentsData = [
     { name: "Abdul Aziz Rendy Pratama", gender: "L", phone: "081234567001" },
     { name: "Achmad Revi Febryan Tri Putra", gender: "L", phone: "081234567002" },
@@ -232,7 +232,7 @@ function startSlider() {
       currentSlide = (currentSlide + 1) % slides.length;
       updateSlider();
     }
-  }, 4000); // Change slide every 4 seconds
+  }, 4000); // Ganti slide setiap 4 detik
 }
 
 // Reset slider interval
@@ -303,7 +303,7 @@ function openActivityModal(activityId) {
   const modalParticipants = document.querySelector(".participants-list");
 
   // ========== Activity data ==========
-  // Di bagian ini berisi content aktivitas modal content atau popup dengan backdrop blur
+  // Content aktivitas modal content atau popup dengan backdrop blur
   const activityData = {
     activity1: {
       title: "Peluncuran Portofolio kelas",
@@ -325,7 +325,7 @@ function openActivityModal(activityId) {
       //sesuaikan dengan card utama
       title: "Profil Pelajar Pancasila",
       date: "26 September 2024",
-      location: "Ruang Kelas X TKJ 1",
+      location: "D.I Yogyakarta",
       description:
         "Melakukan kegiatan belajar dalam rangka P5 dengan mengunjungi tempat-tempat yang mendukung suatu rangkaian pembelajaran yang seru. Beberapa tempat yang dikunjungi antara lain adalah Museum Senobudoyo, BLPT Yogyakarta, Museum Mbah Marijan, Lava Tour Merapi Adventure, malioboro,  dan lainnya. ",
       images: [
