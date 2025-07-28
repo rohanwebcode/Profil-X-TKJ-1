@@ -315,7 +315,6 @@ function openActivityModal(activityId) {
         "img/aktifitas1/portofolio-digital-qrcode.png",
         "img/aktifitas1/foto-laptop-pemrograman.jpg",
         "img/aktifitas1/tampilan-website-portokelas-di-macbook.png",
-        "https://images.unsplash.com/photo-1573167243872-43c6433b9d40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
       ],
       participants: [
         "Rohan Isagani"
