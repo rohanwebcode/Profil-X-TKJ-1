@@ -102,14 +102,26 @@ function initializeData() {
   // Sample data dari 37 siswa XI TKJ 1
   studentsData = [
     { name: "Abdul Aziz Rendy Pratama", gender: "L", phone: "081234567001" },
-    { name: "Achmad Revi Febryan Tri Putra", gender: "L", phone: "081234567002" },
-    { name: "Ahmad Hafidz Salman Alfarisi", gender: "L", phone: "081234567003" },
+    {
+      name: "Achmad Revi Febryan Tri Putra",
+      gender: "L",
+      phone: "081234567002",
+    },
+    {
+      name: "Ahmad Hafidz Salman Alfarisi",
+      gender: "L",
+      phone: "081234567003",
+    },
     { name: "Ahmat Teguh Pambudi", gender: "L", phone: "081234567004" },
     { name: "Akhmat Tukhin", gender: "L", phone: "081234567005" },
     { name: "Al-Abidatus Sholicha", gender: "P", phone: "081234567006" },
     { name: "Amalia Maqsudah", gender: "P", phone: "081234567007" },
     { name: "Andra Ibrahim Ma'ruf", gender: "L", phone: "081234567008" },
-    { name: "Arindra Pradita Pratama Putra", gender: "P", phone: "081234567009" },
+    {
+      name: "Arindra Pradita Pratama Putra",
+      gender: "P",
+      phone: "081234567009",
+    },
     { name: "Astri Lestari", gender: "L", phone: "081234567010" },
     { name: "Azril Cahya Syahputra", gender: "L", phone: "081234567011" },
     { name: "Devin Julio Pratama", gender: "L", phone: "081234567012" },
@@ -126,9 +138,17 @@ function initializeData() {
     { name: "Muhammad Akhdan Ramadhan", gender: "L", phone: "081234567023" },
     { name: "Muhammad Luthfi An-Naufal", gender: "L", phone: "081234567024" },
     { name: "Muhammad Raihan Arrasyiid", gender: "L", phone: "081234567025" },
-    { name: "Muhammad Revanda Aditya Nugraha", gender: "L", phone: "081234567026" },
+    {
+      name: "Muhammad Revanda Aditya Nugraha",
+      gender: "L",
+      phone: "081234567026",
+    },
     { name: "Nailatul Fauziyah", gender: "P", phone: "081234567027" },
-    { name: "Nayla Salasa Bila Ainur Rohma", gender: "P", phone: "081234567028" },
+    {
+      name: "Nayla Salasa Bila Ainur Rohma",
+      gender: "P",
+      phone: "081234567028",
+    },
     { name: "Ponariyo Astama", gender: "L", phone: "081234567029" },
     { name: "Rangga Aditya Alfareza", gender: "L", phone: "081234567030" },
     { name: "Rifatus Aprilia Utari", gender: "P", phone: "081234567031" },
@@ -250,13 +270,16 @@ function initializeActivitySliders() {
   activitySliders.activity2 = 0;
 }
 
-function changeActivitySlide(activityId, direction) {
-  const slider = document.querySelector(
-    `[onclick*="${activityId}"] .activity-slider`
-  );
+function changeActivitySlide(activityId, direction, btn) {
+  // Cari card yang benar berdasarkan tombol yang diklik
+  let card = btn.closest(".activity-card");
+  if (!card) return;
+  const slider = card.querySelector(".activity-slider");
   const slides = slider.querySelectorAll(".activity-slide");
-  const dots = slider.parentElement.querySelectorAll(".activity-dot");
+  const dots = card.querySelectorAll(".activity-dot");
 
+  if (activitySliders[activityId] === undefined)
+    activitySliders[activityId] = 0;
   activitySliders[activityId] += direction;
 
   if (activitySliders[activityId] < 0) {
@@ -268,12 +291,12 @@ function changeActivitySlide(activityId, direction) {
   updateActivitySlider(activityId, slides, dots);
 }
 
-function goToActivitySlide(activityId, slideIndex) {
-  const slider = document.querySelector(
-    `[onclick*="${activityId}"] .activity-slider`
-  );
+function goToActivitySlide(activityId, slideIndex, dot) {
+  let card = dot.closest(".activity-card");
+  if (!card) return;
+  const slider = card.querySelector(".activity-slider");
   const slides = slider.querySelectorAll(".activity-slide");
-  const dots = slider.parentElement.querySelectorAll(".activity-dot");
+  const dots = card.querySelectorAll(".activity-dot");
 
   activitySliders[activityId] = slideIndex;
   updateActivitySlider(activityId, slides, dots);
@@ -316,9 +339,7 @@ function openActivityModal(activityId) {
         "img/aktifitas1/foto-laptop-pemrograman.jpg",
         "img/aktifitas1/tampilan-website-portokelas-di-macbook.png",
       ],
-      participants: [
-        "Rohan Isagani"
-      ],
+      participants: ["Rohan Isagani"],
     },
     activity2: {
       //sesuaikan dengan card utama
@@ -332,16 +353,16 @@ function openActivityModal(activityId) {
         "img/Aktivitas-P5/P5-splitcer.jpg",
         "img/Aktivitas-P5/P5-BLPT.jpg",
         "img/Aktivitas-P5/P5-fotbar.jpg",
-        "img/Aktivitas-P5/P5-xtkj1fotomalioboro.png"
+        "img/Aktivitas-P5/P5-xtkj1fotomalioboro.png",
       ],
       participants: [
-        "Siswa X TKJ 1",
+        "Siswa/i X TKJ 1",
         "Guru TKJ",
         "Angkatan Thn Ajaran 2024",
         "Guru SMKN 2 Lamongan",
       ],
     },
-    activity3: {
+    activity3: { //TIDAK SESUAI DAN AKAN DIHAPUS ACTIVITY 3 
       //sesuaikan dengan card utama
       title: "Belajar Matematika Dasar",
       date: "10 Juni 2025",
@@ -355,9 +376,28 @@ function openActivityModal(activityId) {
         "https://images.unsplash.com/photo-1453733190371-0a9bedd82893?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
       ],
       participants: [
-        "Siswa X TKJ 1",
+        "Siswa/i X TKJ 1",
         "Guru Matematika",
         "Tutor sebaya",
+        "Tim belajar",
+      ],
+    },
+    activity4: {
+      //sesuaikan dengan card utama
+      title: "Logika Pemrograman Scratch",
+      date: "29 Agustus 2025",
+      location: "Laboratorium Informatika SMKN 2 Lamongan",
+      description:
+        "Memahami logika pemrograman dasar dengan menggunakan media game scratch sebagai bentuk interaktif yang mudah bagi pemula. Dalam kegiatan ini siswa dan siswi XI TKJ 1 diajak untuk mengenal konsep dasar pemrograman seperti urutan, dan pengulangan melalui pembuatan proyek sederhana di platform Scratch. Pelaksanaan kegiatan ini berlangsung di laboratorium informatika SMKN 2 Lamongan yang pada saat itu sedang tidak digunakan untuk pembelajaran reguler oleh kelas lainnya. Hal ini memungkinkan siswa untuk belajar dalam lingkungan yang kondusif dengan fasilitas yang memadai seperti proyektor.",
+      images: [
+        "img/aktifitas2/scratch-dan-lkpd.jpg",
+        "img/aktifitas2/scratch1.jpg",
+        "img/aktifitas2/scratch2.jpg",
+        "img/aktifitas2/scratch3.png",
+      ],
+      participants: [
+        "Siswa/i X TKJ 1",
+        "Guru MP Pilihan Jurusan XI TKJ 1",
         "Tim belajar",
       ],
     },

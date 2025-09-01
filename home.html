@@ -119,7 +119,7 @@
                   </div>
                   <div class="slide">
                     <img
-                      src="img/topologi-jaringan.png"
+                      src="img/foto-pembelajaran-produktif.jpg"
                       alt="Jaringan Komputer - Kelas X TKJ 1"
                       class="slider-img"
                     />
@@ -213,8 +213,8 @@
                     Menciptakan lingkungan belajar yang kondusif dan kolaboratif
                   </li>
                   <li>
-                    Mempersiapkan siswa untuk melanjutkan pendidikan atau
-                    memasuki dunia kerja
+                    Mempersiapkan siswa untuk melanjutkan pendidikan tinggi atau
+                    memasuki dunia kerja industri yang sesuai
                   </li>
                 </ul>
               </div>
@@ -240,7 +240,7 @@
                   <h3>Senin</h3>
                   <p class="room-info">
                     <i class="fas fa-map-marker-alt"></i>
-                    Ruang A25
+                    Ruang G1
                   </p>
                 </div>
                 <div class="day-icon">
@@ -316,7 +316,7 @@
                   <h3>Selasa</h3>
                   <p class="room-info">
                     <i class="fas fa-map-marker-alt"></i>
-                    Ruang A25
+                    Ruang G1
                   </p>
                 </div>
                 <div class="day-icon">
@@ -750,21 +750,21 @@
                   <div class="activity-slide active">
                     <img
                       src="img/aktifitas1/portofolio-digital-qrcode.png"
-                      alt="Seminar Pemrograman"
+                      alt="qr-code website portokelas"
                       class="activity-img"
                     />
                   </div>
                   <div class="activity-slide">
                     <img
                       src="img/aktifitas1/foto-laptop-pemrograman.jpg"
-                      alt="Seminar Pemrograman 2"
+                      alt="komputer pemrograman"
                       class="activity-img"
                     />
                   </div>
                   <div class="activity-slide">
                     <img
                       src="img/aktifitas1/tampilan-website-portokelas-di-macbook.png"
-                      alt="Seminar Pemrograman 3"
+                      alt="tampilan responsive website portokelas di macbook"
                       class="activity-img"
                     />
                   </div>
@@ -772,13 +772,13 @@
                 <div class="activity-nav">
                   <button
                     class="activity-nav-btn prev"
-                    onclick="event.stopPropagation(); changeActivitySlide('activity1', -1)"
+                    onclick="event.stopPropagation(); changeActivitySlide('activity1', -1, this)"
                   >
                     <i class="fas fa-chevron-left"></i>
                   </button>
                   <button
                     class="activity-nav-btn next"
-                    onclick="event.stopPropagation(); changeActivitySlide('activity1', 1)"
+                    onclick="event.stopPropagation(); changeActivitySlide('activity1', 1, this)"
                   >
                     <i class="fas fa-chevron-right"></i>
                   </button>
@@ -786,15 +786,15 @@
                 <div class="activity-dots">
                   <span
                     class="activity-dot active"
-                    onclick="event.stopPropagation(); goToActivitySlide('activity1', 0)"
+                    onclick="event.stopPropagation(); goToActivitySlide('activity1', 0, this)"
                   ></span>
                   <span
                     class="activity-dot"
-                    onclick="event.stopPropagation(); goToActivitySlide('activity1', 1)"
+                    onclick="event.stopPropagation(); goToActivitySlide('activity1', 1, this)"
                   ></span>
                   <span
                     class="activity-dot"
-                    onclick="event.stopPropagation(); goToActivitySlide('activity1', 2)"
+                    onclick="event.stopPropagation(); goToActivitySlide('activity1', 2, this)"
                   ></span>
                 </div>
                 <div class="activity-badge">
@@ -889,13 +889,13 @@
                 <div class="activity-nav">
                   <button
                     class="activity-nav-btn prev"
-                    onclick="event.stopPropagation(); changeActivitySlide('activity2', -1)"
+                    onclick="event.stopPropagation(); changeActivitySlide('activity2', -1, this)"
                   >
                     <i class="fas fa-chevron-left"></i>
                   </button>
                   <button
                     class="activity-nav-btn next"
-                    onclick="event.stopPropagation(); changeActivitySlide('activity2', 1)"
+                    onclick="event.stopPropagation(); changeActivitySlide('activity2', 1, this)"
                   >
                     <i class="fas fa-chevron-right"></i>
                   </button>
@@ -903,23 +903,23 @@
                 <div class="activity-dots">
                   <span
                     class="activity-dot active"
-                    onclick="event.stopPropagation(); goToActivitySlide('activity2', 0)"
+                    onclick="event.stopPropagation(); goToActivitySlide('activity2', 0, this)"
                   ></span>
                   <span
                     class="activity-dot"
-                    onclick="event.stopPropagation(); goToActivitySlide('activity2', 1)"
+                    onclick="event.stopPropagation(); goToActivitySlide('activity2', 1, this)"
                   ></span>
                   <span
                     class="activity-dot"
-                    onclick="event.stopPropagation(); goToActivitySlide('activity2', 2)"
+                    onclick="event.stopPropagation(); goToActivitySlide('activity2', 2, this)"
                   ></span>
                   <span
                     class="activity-dot"
-                    onclick="event.stopPropagation(); goToActivitySlide('activity2', 3)"
+                    onclick="event.stopPropagation(); goToActivitySlide('activity2', 3, this)"
                   ></span>
                   <span
                     class="activity-dot"
-                    onclick="event.stopPropagation(); goToActivitySlide('activity2', 4)"
+                    onclick="event.stopPropagation(); goToActivitySlide('activity2', 4,this)"
                   ></span>
                 </div>
               </div>
@@ -966,8 +966,116 @@
             </div>
 
             <!--Activity 3 -->
+            <div class="activity-card" onclick="openActivityModal('activity4')">
+              <div class="activity-image">
+                <div class="activity-slider">
+                  <div class="activity-slide active">
+                    <img
+                      src="img/aktifitas2/scratch-dan-lkpd.jpg"
+                      alt="P5 fotbar rest area"
+                      class="activity-img"
+                    />
+                  </div>
+                  <div class="activity-slide">
+                    <img
+                      src="img/aktifitas2/scratch1.jpg"
+                      alt="praktikum di BLPT splitcer"
+                      class="activity-img"
+                    />
+                  </div>
+                  <div class="activity-slide">
+                    <img
+                      src="img/aktifitas2/scratch2.jpg"
+                      alt="BLPT"
+                      class="activity-img"
+                    />
+                  </div>
+                  <div class="activity-slide">
+                    <img
+                      src="img/aktifitas2/scratch3.png"
+                      alt="P5 Fotbar dengan walas"
+                      class="activity-img"
+                    />
+                  </div>
+                </div>
+                <div class="activity-nav">
+                  <button
+                    class="activity-nav-btn prev"
+                    onclick="event.stopPropagation(); changeActivitySlide('activity4', -1, this)"
+                  >
+                    <i class="fas fa-chevron-left"></i>
+                  </button>
+                  <button
+                    class="activity-nav-btn next"
+                    onclick="event.stopPropagation(); changeActivitySlide('activity4', 1, this)"
+                  >
+                    <i class="fas fa-chevron-right"></i>
+                  </button>
+                </div>
+                <div class="activity-dots">
+                  <span
+                    class="activity-dot active"
+                    onclick="event.stopPropagation(); goToActivitySlide('activity4', 0, this)"
+                  ></span>
+                  <span
+                    class="activity-dot"
+                    onclick="event.stopPropagation(); goToActivitySlide('activity4', 1, this)"
+                  ></span>
+                  <span
+                    class="activity-dot"
+                    onclick="event.stopPropagation(); goToActivitySlide('activity4', 2, this)"
+                  ></span>
+                  <span
+                    class="activity-dot"
+                    onclick="event.stopPropagation(); goToActivitySlide('activity4', 3, this)"
+                  ></span>
+                </div>
+              </div>
+              <div class="activity-content">
+                <div class="activity-meta">
+                  <span class="activity-category">
+                    <i class="fas fa-calculator"></i>
+                    Pembelajaran
+                  </span>
+                  <span class="activity-date">
+                    <i class="fas fa-calendar"></i>
+                    29 Agustus 2025
+                  </span>
+                </div>
+                <h3 class="activity-title">Logika Pemrograman Scratch</h3>
+                <p class="activity-description">
+                  Memahami logika pemrograman dasar dengan menggunakan media
+                  game scratch sebagai bentuk interaktif yang mudah bagi pemula.
+                  Dalam kegiatan ini siswa dan siswi XI TKJ 1 diajak untuk
+                  mengenal konsep dasar pemrograman seperti urutan, dan
+                  pengulangan melalui pembuatan proyek sederhana di platform
+                  Scratch.
+                  <i style="color: #667eea"> [Read More]</i>
+                </p>
+                <div class="activity-details">
+                  <div class="detail-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>SMK Negeri 2 Lamongan</span>
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-clock"></i>
+                    <span>10.00 - 14:05 WIB</span>
+                  </div>
+                  <div class="detail-item">
+                    <i class="fas fa-users"></i>
+                    <span>37 Peserta</span>
+                  </div>
+                </div>
+                <div class="activity-tags">
+                  <span class="tag">Scratch</span>
+                  <span class="tag">Logika</span>
+                  <span class="tag">Animation</span>
+                  <span class="tag">Game</span>
+                </div>
+              </div>
+            </div>
             <!--commingsooon-->
-            
+
             <!-- Simple Activity 3-->
 
             <!-- Template untuk aktivitas baru -->
